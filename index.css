@@ -1,0 +1,108 @@
+body {
+    margin: 0%;
+    padding: 0%;
+
+    background-color: #252422;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    font-size: 1.5rem;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+.Logo {
+    width: 25%;
+    height: auto;
+    position: relative;
+}
+
+a:link, a:visited {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+#Top {
+    position: fixed;
+
+    background-color: #403d39;
+    padding-top: .5%;
+    padding-bottom: .5%;
+
+    width: 100vw;
+    height: min-content;
+
+    top: 0;
+    text-align: center;
+    z-index: 5;
+}
+#Top a {
+    position: relative;
+
+    padding-left: .3%;
+    padding-right: .3%;
+
+    width: fit-content;
+    height: auto;
+
+    font-size: 2rem;
+}
+
+#Middle {
+    position: relative;
+
+    width: 80vw;
+    height: 82vh;
+
+    margin-inline: auto;
+
+    top: 5vh;
+    text-align: center;
+}
+#Middle p{
+    margin: 0%;
+    padding-bottom: 5%;
+    font-size: 1.6rem;
+}
+
+#ImageShowcase {
+    position: relative;
+}
+#ImageShowcase img{
+    width: 55vw;
+    height: auto;
+}
+
+#Bottom {
+    position: fixed;
+    background-color: #403d39;
+
+    width: 100vw;
+    height: min-content;
+
+    bottom: 0;
+    text-align: center;
+    z-index: 5;
+}
+#Bottom a {
+    position: relative;
+
+    padding-left: .3%;
+    padding-right: .3%;
+
+    width: fit-content;
+    height: auto;
+}
+
+#ReviewCard {
+    position: relative;
+    padding-top: 5%;
+
+    bottom: 0;
+}

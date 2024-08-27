@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <link rel="stylesheet" href="index.css">
+    
+    <title>Paige's Place</title>
+</head>
+<body onload="RemoveCredits()">
+    
+    <div id="Top">
+        <a href="index.html" style="color: rgb(95, 139, 206);">Home</a>
+        <a>Menu</a>
+        <a href="Info.html">Info</a>
+    </div>
+
+    <div id="Middle">
+        <img class="Logo" src="src/logo.png"> 
+        <p>Welcome to Paige's Place, a cozy retreat where homestyle cooking meets comfort. This inviting breakfast and lunch spot, with its vintage décor and warm atmosphere, offers a delightful array of meals crafted with care. Run by a dedicated family, Paige’s Place ensures every visit is special, making each meal feel like a comforting experience.</p>
+
+        <div id="ImageShowcase">
+            <img id="ImageToScroll" src="src/Images/Outside.jpg">
+        </div>
+
+        <div id="ReviewCard" class="elfsight-app-66569ab3-d855-47f1-866b-20ebcfe6ac66" data-elfsight-app-lazy></div>
+    </div>
+
+    <div id="Bottom">
+        <a href="https://www.google.com/maps/dir/?api=1&destination=34.46591%2C-87.05943">Address</a>
+        <a href="https://www.facebook.com/profile.php?id=61558363708843">Facebook</a>
+    </div>
+
+</body>
+</html>
+
+<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+<script>
+    const delay = ms => new Promise(res => setTimeout(res, ms));
+    const RemoveCredits = async () => {
+        await delay(1000);
+        ReviewCard = document.getElementById('ReviewCard');
+        ReviewCard.getElementsByTagName("a")[0].remove()
+    }
+
+    let ImageChoices = {
+       1: "src/Images/Outside.jpg",
+       2: "src/Images/SignWall.jpg",
+       3: "src/Images/BlueberryBiscuit.jpg",
+       4: "src/Images/BlueberryBiscuitTray.jpg",
+       5: "src/Images/ChocolateCake1.jpg",
+       6: "src/Images/PulledPork.jpg"
+}
+
+    var CurrentImageIndex = 1
+    var MaxImageIndex = 6
+    const ScrollImage = async () => {
+        await delay(5000);
+        ImageScroller = document.getElementById("ImageToScroll")
+        if (CurrentImageIndex >= MaxImageIndex) {
+            CurrentImageIndex = 1
+        }else {
+            CurrentImageIndex+=1
+        }
+        ImageScroller.src = ImageChoices[CurrentImageIndex]
+        ScrollImage()
+    }
+    ScrollImage()
+</script>
