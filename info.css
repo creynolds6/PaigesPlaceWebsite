@@ -68,11 +68,11 @@ a:link, a:visited {
     position: relative;
 
     width: 80vw;
-    height: 120vh;
+    height: 160vh;
 
     margin-inline: auto;
 
-    top: 10vh;
+    top: 3.5vh;
     text-align: center;
 }
 #Middle p{
