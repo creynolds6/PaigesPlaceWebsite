@@ -18,9 +18,14 @@ body {
 }
 
 .Logo {
-    width: 15%;
-    height: auto;
-    position: relative;
+    width: 45px;
+    height: 45px;
+    position: fixed;
+
+    left: 0;
+    top: 0;
+
+    padding: .2%;
 }
 
 a:link, a:visited {
@@ -45,8 +50,8 @@ a:link, a:visited {
 #Top a {
     position: relative;
 
-    padding-left: .3%;
-    padding-right: .3%;
+    padding-left: .5%;
+    padding-right: .5%;
 
     width: fit-content;
     height: auto;
@@ -71,7 +76,7 @@ a:link, a:visited {
     top: 35%;
 }
 #Middle a{
-    color: #595555;
+    color: rgb(95, 139, 206);
 }
 
 #ImageShowcase {
@@ -101,11 +106,4 @@ a:link, a:visited {
 
     width: fit-content;
     height: auto;
-}
-
-#ReviewCard {
-    position: relative;
-    padding-top: 15%;
-
-    bottom: 0;
 }

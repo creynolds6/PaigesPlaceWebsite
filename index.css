@@ -18,9 +18,14 @@ body {
 }
 
 .Logo {
-    width: 25%;
-    height: auto;
-    position: relative;
+    width: 45px;
+    height: 45px;
+    position: fixed;
+
+    left: 0;
+    top: 0;
+
+    padding: .2%;
 }
 
 a:link, a:visited {
@@ -45,8 +50,8 @@ a:link, a:visited {
 #Top a {
     position: relative;
 
-    padding-left: .3%;
-    padding-right: .3%;
+    padding-left: .5%;
+    padding-right: .5%;
 
     width: fit-content;
     height: auto;
@@ -65,18 +70,28 @@ a:link, a:visited {
     top: 5vh;
     text-align: center;
 }
+#Middle h1{
+    font-size: 3rem;
+
+    margin-top: .5%;
+    margin-bottom: .5%;
+}
 #Middle p{
     margin: 0%;
-    padding-bottom: 5%;
+    padding-bottom: 2.5%;
     font-size: 1.6rem;
+}
+#Middle a{
+    margin: 2.5%;
 }
 
 #ImageShowcase {
     position: relative;
 }
 #ImageShowcase img{
-    width: 55vw;
+    width: 70vw;
     height: auto;
+    border-radius: .6%;
 }
 
 #Bottom {
