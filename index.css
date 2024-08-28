@@ -127,6 +127,8 @@ a:link, a:visited {
     width: 75vw;
     height: .1vh;
 
+    margin-inline: auto;
+
     margin-bottom: 2%;
     margin-top: 0%;
 }
