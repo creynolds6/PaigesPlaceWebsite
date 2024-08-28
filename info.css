@@ -4,7 +4,7 @@ body {
 
     background-color: #252422;
     color: white;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
     overflow-x: hidden;
     overflow-y: auto;
@@ -26,6 +26,11 @@ body {
     top: 0;
 
     padding: .2%;
+}
+.Logo2 {
+    width: 260px;
+    height: auto;
+    position: relative;
 }
 
 a:link, a:visited {
@@ -63,7 +68,7 @@ a:link, a:visited {
     position: relative;
 
     width: 80vw;
-    height: 75vh;
+    height: 120vh;
 
     margin-inline: auto;
 
@@ -73,18 +78,9 @@ a:link, a:visited {
 #Middle p{
     position: relative;
     font-size: 1.6rem;
-    top: 35%;
 }
 #Middle a{
     color: rgb(95, 139, 206);
-}
-
-#ImageShowcase {
-    position: relative;
-}
-#ImageShowcase img{
-    width: 55vw;
-    height: auto;
 }
 
 #Bottom {

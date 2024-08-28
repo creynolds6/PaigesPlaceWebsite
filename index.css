@@ -4,7 +4,7 @@ body {
 
     background-color: #252422;
     color: white;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
     overflow-x: hidden;
     overflow-y: auto;
@@ -73,7 +73,7 @@ a:link, a:visited {
 #Middle h1{
     font-size: 3rem;
 
-    margin-top: .5%;
+    margin-top: 1.5%;
     margin-bottom: .5%;
 }
 #Middle p{
@@ -89,7 +89,7 @@ a:link, a:visited {
     position: relative;
 }
 #ImageShowcase img{
-    width: 70vw;
+    width: 80vw;
     height: auto;
     border-radius: .6%;
 }
@@ -120,4 +120,22 @@ a:link, a:visited {
     padding-top: 5%;
 
     bottom: 0;
+}
+
+.line {
+    background-color: white;
+    width: 75vw;
+    height: .1vh;
+
+    margin-bottom: 2%;
+    margin-top: 0%;
+}
+
+#PlaceDescription {
+    margin-top: 2.5%;
+
+    width: fit-content;
+
+    text-align: center;
+    padding-top: 2%;
 }
