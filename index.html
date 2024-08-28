@@ -12,7 +12,7 @@
     
     <title>Paige's Place</title>
 </head>
-<body onload="RemoveCredits()">
+<body>
     
     <div id="Top">
         <a href="index.html" style="color: rgb(95, 139, 206);">Home</a>
@@ -50,13 +50,6 @@
 <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
 <script>
     const delay = ms => new Promise(res => setTimeout(res, ms));
-    const RemoveCredits = async () => {
-        await delay(1000);
-        ReviewCard = document.getElementById('ReviewCard');
-        if (ReviewCard.getElementsByTagName("a")[0]) {
-            ReviewCard.getElementsByTagName("a")[0].remove()
-        }
-    }
 
     let ImageChoices = {
        1: "src/Images/Outside.jpg",
