@@ -5,7 +5,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes">
 
     <link rel="stylesheet" href="index.css">
     <link rel="icon" type="image/x-icon" href="src/logo_withBG.ico">
@@ -53,7 +53,9 @@
     const RemoveCredits = async () => {
         await delay(1000);
         ReviewCard = document.getElementById('ReviewCard');
-        ReviewCard.getElementsByTagName("a")[0].remove()
+        if (ReviewCard.getElementsByTagName("a")[0]) {
+            ReviewCard.getElementsByTagName("a")[0].remove()
+        }
     }
 
     let ImageChoices = {
